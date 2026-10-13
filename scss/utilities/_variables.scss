@@ -1,0 +1,20 @@
+$color-oscuro: rgb(109, 29, 29);
+$color-claro: rgb(227, 234, 240);
+$color-hero: $color-oscuro;
+$color-boton: rgb(233, 18, 18);
+$color-tarjetas: rgb(255, 212, 184);
+$color-hover: rgba(253, 33, 33, .342);
+$color-texto: rgb(165, 42, 42);
+$color-borde: rgb(163, 163, 163);
+$color-blanco: white;
+$fuente: "Montserrat", sans-serif;
+$fondo-barras: url("../img/fondo-granos.png");
+$sombra: 5px 5px 10px $color-oscuro;
+$radio: 5px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Transformaciones originales de Clase 8
+$hover-nav: scale(1.15);
+$hover-boton: translate3d(10px, -8px, 15px);
+$active: scale(0.8);

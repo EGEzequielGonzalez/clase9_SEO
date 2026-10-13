@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+
+// Indicadores de foco visibles al navegar por teclado.
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid $color-oscuro;
+  outline-offset: 3px;
+}
+
+header a:focus-visible,
+header button:focus-visible,
+.hero button:focus-visible {
+  outline-color: $color-claro;
+}
+
+// Contraste de texto en tarjetas y enlaces interactivos.
+.tarjeta,
+.producto-tarjeta {
+  color: $color-oscuro;
+}

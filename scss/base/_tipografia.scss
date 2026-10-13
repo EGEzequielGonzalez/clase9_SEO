@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.title {
+    font-family: $fuente;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.texto {
+    color: $color-texto;
+    font-family: $fuente;
+    font-size: 18px;
+}
+
+@include escritorio {
+    .title {
+        font-size: 2.5rem;
+    }
+}

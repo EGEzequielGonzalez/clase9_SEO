@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="contacto Código Café, consultas cafetería, formulario de contacto, atención Código Café"
+    name="keywords" />
+  <meta
+    content="Contactate con Código Café para hacernos una consulta, dejarnos un comentario o conocer más sobre nuestra propuesta y atención."
+    name="description" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contacto y consultas | Código Café</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <!-- Navegación principal de Bootstrap -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img alt="Logotipo de Código Café"
+            src="../img/logo-header.webp" /></a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación"
+          class="navbar-toggler hamburguesa" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+          type="button">☰</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link link-menu" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./galeria.html">Galería</a></li>
+            <li class="nav-item"><a aria-current="page" class="nav-link link-menu" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Título principal de contacto -->
+    <h1 class="title" data-aos="fade-up">Contactá a Código Café</h1>
+    <!-- Formulario de contacto -->
+    <form action="#" class="formulario-contacto" data-aos="fade-up">
+      <fieldset>
+        <legend>Datos personales</legend><label>Nombre <input autocomplete="given-name" id="nombre" name="nombre"
+            required="" type="text" /></label><label>Apellido <input autocomplete="family-name" id="apellido"
+            name="apellido" required="" type="text" /></label>
+      </fieldset>
+      <label>Comentarios <textarea id="comentario" name="comentario" placeholder="Escribí tu comentario"
+          required=""></textarea></label>
+      <button class="btn btn-danger mt-3" type="submit">Enviar</button>
+    </form>
+    <button class="btn btn-outline-danger" data-bs-target="#modalHorarios" data-bs-toggle="modal" type="button">Ver
+      información de atención</button>
+    <!-- Componente interactivo: modal de Bootstrap -->
+    <div aria-hidden="true" aria-labelledby="modalHorariosLabel" class="modal fade" id="modalHorarios" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalHorariosLabel">Información de atención</h2><button aria-label="Cerrar"
+              class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">Contactanos para consultar nuestros horarios de atención y conocer más sobre Código
+            Café.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal"
+              type="button">Cerrar</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mapa de referencia --><iframe allowfullscreen="" class="mapa-contacto" data-aos="fade-up" loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28482.857375187166!2d-65.24218967221799!3d-26.828589794787757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c67ac0600d9%3A0xc03e364bcf3e1588!2sClick%20Materiales%20Tecnopor%20(Distribuidor%20KNAUF)!5e0!3m2!1ses-419!2sar!4v1790276773534!5m2!1ses-419!2sar"
+      title="Mapa de referencia para consultas de Código Café"></iframe>
+  </main>
+  <!-- FOOTER / REDES SOCIALES --><!-- Pie de página y redes sociales -->
+  <footer>
+    <p>Todos los derechos reservados</p>
+    <ul>
+      <li><a aria-label="Visitar Instagram de Código Café" href="https://www.instagram.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/instagram.png" /></a></li>
+      <li><a aria-label="Visitar TikTok de Código Café" href="https://www.tiktok.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/tiktok.png" /></a></li>
+      <li><a aria-label="Visitar X de Código Café" href="https://www.x.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/x.png" /></a></li>
+    </ul>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, once: true, offset: 60,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script>
+</body>
+
+</html>

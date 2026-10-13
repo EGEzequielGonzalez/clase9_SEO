@@ -1,0 +1,15 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+%barras {
+    background-image: $fondo-barras;
+    background-color: $color-oscuro;
+    color: $color-claro;
+    width: 100%;
+}
+
+%lista-barras {
+    list-style: none;
+    @include flex(column, null, center, 1rem);
+    padding: 1rem;
+}

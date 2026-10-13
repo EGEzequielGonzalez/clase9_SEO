@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="galería de cafetería, espacios de café, salón de café, patio, Código Café" name="keywords" />
+  <meta
+    content="Recorré los espacios de Código Café en nuestra galería: salón, patio y ambientes para disfrutar de una experiencia de café."
+    name="description" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Galería de espacios y ambientes | Código Café</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <!-- Navegación principal de Bootstrap -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img alt="Logotipo de Código Café"
+            src="../img/logo-header.webp" /></a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación"
+          class="navbar-toggler hamburguesa" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+          type="button">☰</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link link-menu" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a aria-current="page" class="nav-link link-menu" href="./galeria.html">Galería</a>
+            </li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Título principal de galería -->
+    <h1 class="title" data-aos="fade-up">Galería de nuestros espacios de café</h1>
+    <div class="movil" data-aos="fade-up">
+      <!-- Carrusel de Bootstrap: un único slide active -->
+      <div class="carousel slide" id="carouselExample">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img alt="Salón interior de Código Café" class="d-block w-100"
+              loading="lazy" src="../img/interior_1_carrusel.png" /></div>
+          <div class="carousel-item"><img alt="Patio al aire libre de la cafetería" class="d-block w-100" loading="lazy"
+              src="../img/interior2.webp" /></div>
+          <div class="carousel-item"><img alt="Personas compartiendo un café" class="d-block w-100" loading="lazy"
+              src="../img/interior_3_carrusel.png" /></div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExample" type="button"><span
+            aria-hidden="true" class="carousel-control-prev-icon"></span><span
+            class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExample" type="button"><span
+            aria-hidden="true" class="carousel-control-next-icon"></span><span
+            class="visually-hidden">Siguiente</span></button>
+      </div>
+    </div>
+    <div class="escritorio">
+      <section class="galeria" data-aos="fade-up">
+        <figure class="foto-cuadrada-1" tabindex="0"><img alt="Salón interior de la cafetería" loading="lazy"
+            src="../img/interior1.webp" />
+          <figcaption>Viví nuestro salón</figcaption>
+        </figure>
+        <figure class="foto-vertical" tabindex="0"><img alt="Patio al aire libre de la cafetería" loading="lazy"
+            src="../img/interior2.webp" />
+          <figcaption>El mejor patio</figcaption>
+        </figure>
+        <figure class="foto-cuadrada-2" tabindex="0"><img alt="Clientes compartiendo café en el salón" loading="lazy"
+            src="../img/interior3.webp" />
+          <figcaption>Momentos de café</figcaption>
+        </figure>
+        <figure class="foto-horizontal" tabindex="0"><img alt="Vista de los ambientes interiores y exteriores"
+            loading="lazy" src="../img/interior4.webp" />
+          <figcaption>Disfrutá nuestros ambientes</figcaption>
+        </figure>
+      </section>
+    </div>
+  </main>
+  <!-- FOOTER / REDES SOCIALES --><!-- Pie de página y redes sociales -->
+  <footer>
+    <p>Todos los derechos reservados</p>
+    <ul>
+      <li><a aria-label="Visitar Instagram de Código Café" href="https://www.instagram.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/instagram.png" /></a></li>
+      <li><a aria-label="Visitar TikTok de Código Café" href="https://www.tiktok.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/tiktok.png" /></a></li>
+      <li><a aria-label="Visitar X de Código Café" href="https://www.x.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="../img/x.png" /></a></li>
+    </ul>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, once: true, offset: 60,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script>
+</body>
+
+</html>

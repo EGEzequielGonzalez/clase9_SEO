@@ -1,0 +1,45 @@
+@mixin flex($direccion, $justificar: null, $alinear: null, $gap: null) {
+  display: flex;
+  flex-direction: $direccion;
+
+  @if $justificar !=null {
+    justify-content: $justificar;
+  }
+
+  @if $alinear !=null {
+    align-items: $alinear;
+  }
+
+  @if $gap !=null {
+    gap: $gap;
+  }
+}
+
+@mixin grid($columnas, $filas: null, $areas: null, $gap: null) {
+  display: grid;
+  grid-template-columns: $columnas;
+
+  @if $filas !=null {
+    grid-template-rows: $filas;
+  }
+
+  @if $areas !=null {
+    grid-template-areas: $areas;
+  }
+
+  @if $gap !=null {
+    gap: $gap;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin escritorio {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

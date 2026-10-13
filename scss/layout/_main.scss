@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+// Keyframes originales de la Entrega 8.
+@keyframes halo {
+  0% { box-shadow: none; }
+  50% { box-shadow: 0 0 15px 10px $color-oscuro; }
+  100% { box-shadow: none; }
+}
+
+@keyframes luz-boton {
+  0% { box-shadow: none; }
+  50% { box-shadow: 0 0 15px 10px $color-claro; }
+  100% { box-shadow: none; }
+}
+
+main {
+  color: $color-oscuro;
+  @include flex(column, null, center, 1rem);
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+}
+
+.hero {
+  background-color: $color-hero;
+  color: $color-claro;
+  @include flex(column, space-around, center, 0.8rem);
+  padding: 1rem;
+  width: 100%;
+  border-radius: $radio;
+  perspective: 1000px;
+  animation: halo 2s ease-in-out;
+  h2 { font-size: 1.8rem; }
+
+  // En la versión con Bootstrap el enlace pasó a ser un botón modal.
+  .btn {
+    padding: 1rem;
+    transition: all 0.5s;
+    animation: luz-boton 1s ease-out 0.5s;
+    &:hover, &:focus-visible { transform: $hover-boton; }
+    &:active { transform: $active; }
+  }
+}
+
+@include escritorio {
+  main { padding: 0; }
+  .hero { width: auto; }
+}

@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+
+.accordion {
+    width: 100%;
+}
+
+.modal-content,
+.accordion-item,
+.card {
+    color: $color-oscuro;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $color-oscuro;
+    background-color: $color-tarjetas;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 .2rem $color-hover;
+}

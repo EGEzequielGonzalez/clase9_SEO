@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="café de especialidad, pastelería artesanal, cursos de barista, Código Café" name="keywords" />
+  <meta
+    content="Descubrí Código Café: cafés de especialidad, pastelería artesanal y cursos de barista. Explorá nuestras propuestas y encontrá tu momento de café."
+    name="description" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Café de especialidad, pastelería y cursos | Código Café</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <!-- Navegación principal de Bootstrap -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img alt="Logotipo de Código Café"
+            src="./img/logo-header.webp" /></a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación"
+          class="navbar-toggler hamburguesa" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+          type="button">☰</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a aria-current="page" class="nav-link link-menu" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./pages/galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./pages/contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./pages/productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link link-menu" href="./pages/nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Título principal -->
+    <h1 class="title" data-aos="fade-up">Te invitamos al mundo del mejor café</h1>
+    <!-- Hero de ofertas y animación de Clase 8 -->
+    <aside class="hero" data-aos="zoom-in">
+      <h2>Descubrí nuestras ofertas en café y pastelería</h2>
+      <button class="btn btn-danger" data-bs-target="#modalOfertas" data-bs-toggle="modal" type="button">Ver
+        más</button>
+    </aside>
+    <!-- Tarjetas: Flexbox original y animaciones AOS alternadas -->
+    <section aria-label="Nuestros servicios y productos" class="contenedor-tarjetas">
+      <div class="tarjeta-aos" data-aos="fade-up" data-aos-duration="1500">
+        <article class="tarjeta">
+          <h2>Cafés</h2><img alt="Tazas de café preparadas para degustación" loading="lazy" src="./img/cafes.webp" />
+          <p class="texto">Conocé nuestros cafés de especialidad y descubrí variedades para disfrutar a cualquier hora.
+          </p>
+        </article>
+      </div>
+      <div class="tarjeta-aos" data-aos="fade-down" data-aos-duration="1500">
+        <article class="tarjeta">
+          <h2>Cursos</h2><img alt="Barista durante la preparación de café" loading="lazy" src="./img/barista.webp" />
+          <p class="texto">Explorá nuestros cursos de barista y aprendé más sobre la preparación del café.</p>
+        </article>
+      </div>
+      <div class="tarjeta-aos" data-aos="fade-up" data-aos-duration="1500">
+        <article class="tarjeta">
+          <h2>Pastelería</h2><img alt="Selección de pastelería artesanal" loading="lazy" src="./img/pasteleria.webp" />
+          <p class="texto">Probá nuestra pastelería artesanal, ideal para acompañar tu café favorito.</p>
+        </article>
+      </div>
+      <div class="tarjeta-aos" data-aos="fade-down" data-aos-duration="1500">
+        <article class="tarjeta">
+          <h2>Momentos de café</h2><img alt="Selección de pastelería artesanal" loading="lazy"
+            src="./img/pasteleria.webp" />
+          <p class="texto">Disfrutá momentos especiales con café, encuentros y propuestas para compartir.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- Modal interactivo de Bootstrap -->
+  <!-- Componente interactivo: modal de Bootstrap -->
+  <div aria-hidden="true" aria-labelledby="modalOfertasLabel" class="modal fade" id="modalOfertas" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalOfertasLabel">Ofertas de Código Café</h2><button aria-label="Cerrar"
+            class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">Conocé nuestras promociones en cafés, pastelería y cursos de barista.</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal"
+            type="button">Cerrar</button><a class="btn btn-danger" href="./pages/productos.html">Ver productos</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER / REDES SOCIALES --><!-- Pie de página y redes sociales -->
+  <footer>
+    <p>Todos los derechos reservados</p>
+    <ul>
+      <li><a aria-label="Visitar Instagram de Código Café" href="https://www.instagram.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="./img/instagram.png" /></a></li>
+      <li><a aria-label="Visitar TikTok de Código Café" href="https://www.tiktok.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="./img/tiktok.png" /></a></li>
+      <li><a aria-label="Visitar X de Código Café" href="https://www.x.com" rel="noopener noreferrer"
+          target="_blank"><img alt="" src="./img/x.png" /></a></li>
+    </ul>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, once: true, offset: 60,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script>
+</body>
+
+</html>

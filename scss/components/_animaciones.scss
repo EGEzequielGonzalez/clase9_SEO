@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+
+.galeria figure {
+    img {
+        transition: transform .4s ease;
+    }
+
+    &:hover img,
+    &:focus-visible img {
+        transform: scale(1.03);
+    }
+}
+
+.btn {
+    transition: background-color .3s ease, border-color .3s ease, transform .3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

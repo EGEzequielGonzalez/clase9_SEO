@@ -1,0 +1,41 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+header nav ul { @extend %lista-barras; }
+
+.hamburguesa {
+  color: $color-claro;
+  border: 1px solid $color-claro;
+  font-size: 2rem;
+}
+
+// Conservar la transición y las transformaciones de Clase 8.
+.link-menu, .navbar-nav .nav-link.link-menu {
+  color: $color-claro;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding: 0.3rem;
+  border-radius: $radio;
+  transition: all 0.5s;
+
+  &:visited { color: $color-tarjetas; }
+  &:hover, &:focus-visible {
+    background-color: $color-hover;
+    color: $color-claro;
+    transform: $hover-nav;
+  }
+  &:active {
+    text-decoration: underline;
+    transform: $active;
+  }
+}
+
+@include escritorio {
+  header nav ul {
+    flex-direction: row;
+    padding: 2rem;
+    li a { font-size: 1.5rem; }
+  }
+}

@@ -1,0 +1,61 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.contenedor-tarjetas {
+    @include flex(column, null, null, 1rem);
+    width: 100%;
+}
+
+.tarjeta {
+    background: linear-gradient($color-tarjetas, $color-blanco);
+    @include flex(column, null, center, .7rem);
+    border-radius: $radio;
+    overflow: hidden;
+    height: 100%;
+
+    h2 {
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        transition: transform 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@include escritorio {
+    .contenedor-tarjetas {
+        flex-direction: row;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .tarjeta {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+// Contenedor AOS original, sin sustituir el layout Flexbox
+.tarjeta-aos {
+    min-width: 0;
+    width: 100%;
+}
+
+@include escritorio {
+    .tarjeta-aos {
+        flex: 1;
+    }
+}

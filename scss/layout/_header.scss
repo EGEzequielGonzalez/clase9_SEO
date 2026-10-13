@@ -1,0 +1,5 @@
+@use "../utilities/extend" as *;
+
+header {
+    @extend %barras;
+}

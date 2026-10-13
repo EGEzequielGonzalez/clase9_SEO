@@ -1,0 +1,36 @@
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+footer {
+    @extend %barras;
+    @include flex(column, null, flex-end, 1rem);
+    padding: 1rem;
+    margin-top: 2rem;
+
+    p {
+        margin: 0;
+        text-align: right;
+    }
+
+    ul {
+        list-style: none;
+        @include flex(row, null, center, 1rem);
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include escritorio {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 2rem;
+
+        ul {
+            flex-direction: row;
+            gap: 1rem;
+            padding: 0;
+        }
+    }
+}

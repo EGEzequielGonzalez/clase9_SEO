@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+.hero .btn,
+.btn-danger {
+    background-color: $color-boton;
+    border-color: $color-boton;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $color-texto;
+        border-color: $color-texto;
+    }
+}
+
+.btn-outline-danger {
+    color: $color-oscuro;
+    border-color: $color-oscuro;
+
+    &:hover,
+    &:focus-visible {
+        color: $color-blanco;
+        background-color: $color-oscuro;
+        border-color: $color-oscuro;
+    }
+}
